@@ -1,0 +1,227 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="zh">
+	<head>
+		
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="robots" content="index, follow" />
+		<meta name="generator" content="RapidWeaver" />
+		
+		<title>最开始的部分 | 最开始的部分</title>
+		<link rel="stylesheet" type="text/css" media="all" href="rw_common/themes/blog/consolidated.css?rwcache=603636509" />
+		
+		
+		
+		
+		
+		
+		
+		<script type="text/javascript" src="rw_common/themes/blog/javascript.js?rwcache=603636509"></script>
+		
+		
+		
+		
+	</head>
+<body>
+<div id="top_grad"></div>
+<div id="container"><!-- Start container -->
+	<div id="pageHeader"><!-- Start page header -->
+		
+		<h1>最开始的部分</h1>
+		<h2></h2>
+	</div><!-- End page header -->
+	<div id="sidebarContainer"><!-- Start Sidebar wrapper -->
+		<div id="navcontainer"><!-- Start Navigation -->
+			<ul><li><a href="./" rel="" id="current">最开始的部分</a></li></ul>
+		</div><!-- End navigation -->
+		<h1 class="sideHeader"></h1><!-- Sidebar header -->
+		<div id="sidebar"><!-- Start sidebar content -->
+		
+			 <br /><!-- sidebar content you enter in the page inspector -->
+			 <!-- sidebar content such as the blog archive links -->
+		</div><!-- End sidebar content -->
+	</div><!-- End sidebar wrapper -->
+	<div id="contentContainer"><!-- Start main content wrapper -->
+		<div id="content"><!-- Start content -->
+			<h1 id="最开始的部分">最开始的部分</h1>
+
+<h2 id="目录">目录</h2>
+
+<h3 id="c概览"><a href="#1-c-%e6%a6%82%e8%a7%88">C++概览</a></h3>
+
+<h3 id="helloworld"><a href="#2-hello-world">Hello, world!</a></h3>
+
+<h3 id="基本命令行"><a href="#3-%e5%9f%ba%e6%9c%ac%e5%91%bd%e4%bb%a4%e8%a1%8c">基本命令行</a></h3>
+
+<h3 id="oj"><a href="#4-oj">OJ</a></h3>
+
+<hr />
+
+<h2 id="1.c概览">1. C++ 概览</h2>
+
+<p>其实，C++的本质是两部分：C和<a href="https://www.baidu.com/s?ie=utf-8&amp;wd=STL">STL</a> 。</p>
+
+<p>C++的后缀名们</p>
+
+<pre><code class="cpp">
+.cpp
+.cc
+.cxx
+.c++
+.c
+.txt
+(无后缀名)
+... ...
+</code></pre>
+
+<p>C++ 的代码结构</p>
+
+<pre><code class="cpp">#include &lt;iostream&gt;           
+                              //上一行是头文件
+#define PI 3.14               //宏定义
+using namespace std;          //命名空间
+int abs(int a){               //自定义函数
+    return a&gt;0?a:-a;
+}
+int main(){                   //主函数
+    int n;
+    cin&gt;&gt;n;
+    cout&lt;&lt;abs(n*PI);
+    return 0;
+}
+</code></pre>
+
+<h2 id="2.helloworld">2. Hello, world!</h2>
+
+<h3 id="标准代码1">标准代码1</h3>
+
+<pre><code class="cpp">#include &lt;iostream&gt;
+using namespace std;
+int main(){
+    cout&lt;&lt;&quot;Hello, world!&quot;;//流输出
+    return 0;
+}
+</code></pre>
+
+<p>输出：</p>
+
+<figure>
+<img src="https://i.loli.net/2020/02/10/3wUSxiKW7ltgAoL.png" alt="image.png" />
+<figcaption>image.png</figcaption></figure>
+
+<h3 id="标准代码2">标准代码2</h3>
+
+<pre><code class="cpp">#include &lt;cstdio&gt;
+using namespace std;
+int main(){
+    printf(&quot;Hello, World!&quot;);//C的标准输出
+    return 0;
+}
+</code></pre>
+
+<p>输出：</p>
+
+<figure>
+<img src="https://i.loli.net/2020/02/10/3wUSxiKW7ltgAoL.png" alt="image.png" />
+<figcaption>image.png</figcaption></figure>
+
+<h3 id="不标准代码1">不标准代码1</h3>
+
+<pre><code class="cpp">#include&lt;stdio.h&gt;
+using namespace std;
+int main(){
+    string s=&quot;Hello, world!&quot;;
+    puts(s);//输出一行
+    return 0;
+}
+</code></pre>
+
+<p>输出：</p>
+
+<figure>
+<img src="https://i.loli.net/2020/02/10/3wUSxiKW7ltgAoL.png" alt="" />
+<figcaption></figcaption></figure>
+
+<h3 id="不标准代码2">不标准代码2</h3>
+
+<pre><code class="cpp">#include&lt;stdio.h&gt;
+using namespace std;
+int main(){
+    string s=&quot;Hello, world!&quot;;
+    for(int i=0;i&lt;s.length();i++){
+        putchar(s[i]);//逐个输出字符
+    }
+    return 0;
+}
+</code></pre>
+
+<p>输出：</p>
+
+<figure>
+<img src="https://i.loli.net/2020/02/10/3wUSxiKW7ltgAoL.png" alt="" />
+<figcaption></figcaption></figure>
+
+<h2 id="3.基本命令行">3. 基本命令行</h2>
+
+<h3 id="进入目录">进入目录</h3>
+
+<p><code>cd (目录地址)</code></p>
+
+<h3 id="打开文件">打开文件</h3>
+
+<p><code>more (文件名)</code></p>
+
+<h3 id="新建文件">新建文件</h3>
+
+<p><code>touch (文件名)</code></p>
+
+<h3 id="编译">编译</h3>
+
+<p>####
+最基本：</p>
+
+<pre><code>源文件：a.cpp
+输出文件：a.exe
+打开O2
+显示更多错误
+</code></pre>
+
+<pre><code class="cpp">g++ a.cpp -o a.exe -O2 -Wall
+</code></pre>
+
+<h4 id="其他的">其他的</h4>
+
+<p>请参考<a href="https://cpp-coding.github.io/cpp/beginning/first/g++.txt">这里</a></p>
+
+<h2 id="4.oj">4. OJ</h2>
+
+<p>这是<code>Online Judge</code>的简称。</p>
+
+<p>中国主流的OJ有</p>
+
+<ol>
+<li><a href="luogu.com.cn">洛谷</a>中国最大的非校内OJ，没有之一。本套内容大部分习题会在洛谷上发布。</li>
+<li><a href="openjudge.cn">Openjudge</a>比较老牌的OJ，很多题目，推荐<a href="noi.openjudge.cn">NOI</a>，<a href="bailian.openjudge.cn">百练</a>小组</li>
+</ol>
+
+<p>国际上主流的OJ有</p>
+
+<ol>
+<li><a href="vjudge.net">Virtual judge</a>，融合了很多OJ，可以进行跨平台评测，很强，很强。</li>
+<li><a href="codeforces.com">Codeforces</a>，俄罗斯的网站，有点慢，比赛质量高，适合日常ACM训练。</li>
+<li><a href="atcoder.jp">Atcoder</a>，日本网站，比赛过水，适合打信心恢复赛，但是有难题。</li>
+</ol>
+
+<p>不方便多啰嗦，请点开各自网站进行查看。</p>
+		</div><!-- End content -->
+	</div><!-- End main content wrapper -->
+	<div class="clearer"></div>
+</div><!-- End container -->
+<div id="footer"><!-- Start Footer -->
+	<div id="breadcrumbcontainer"><!-- Start the breadcrumb wrapper -->
+		
+	</div><!-- End breadcrumb -->
+	<p></p>
+</div><!-- End Footer -->
+
+</body>
+</html>
